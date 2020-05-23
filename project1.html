@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="train.css">
+    <link rel="stylesheet" href="media.css">
+    <title>Train story</title>
+</head>
+<body>
+    <header>
+        <img src="sky.jpg" id="sky">
+        <img src="train.png" id="train">
+        <h2 id="text">Train's Story</h2>
+    </header>
+    <div class="introduction">
+        <p>Trains have been a popular form of transportation since the 19th century. When the first steam train was built in 1804, 
+            people were worried that the speed would make rail passengers to breathe or that they would be shaken unconscious by the 
+            vibrations. But by the 1850s, passengers were traveling at previously unthinkable speeds of 80km/hr or more. Rail travel was 
+            cheap, and people who had never been on a journey before could now afford to make trips by train. Cities that had once seemed 
+            far apart suddenly felt much closer together, because people and goods could move between them in hours rather than days. In 
+            some places, new towns sprang up beside the tracks.</p>
+    </div>
+    
+    <div class="part1">
+        <h3>First railways</h3>
+        <div class="container1">
+            <img src="coal_wagon.jpg" width="300" height="300" alt="coal wagon">
+            <p>Railways existed long before steam engines were invented. From the mid-1500s onwards, railways were used in some European mines 
+                to move heavy wagonloads of coal and mineral ore along tunnels. Later, others were built to carry coal from coal mines to ships 
+                in nearby rivers and harbours. THe wagons ran first on parallel wooden planks, and then on iron rails. The job of hauling the 
+                wagons was done by people or horses. Some wagons, such as the one on the right, could freewheel downhill, controlled by a driver
+                operating the brake. A horse pulled the empty wagon back up the hill for the next load.</p>
+        </div>
+    </div>
+
+    <div class="part2">
+        <h3>Steam locomotives</h3>
+        <div class="container2">
+            <img src="steam_locomotive.jpg" width="300" alt="steam locomotive">
+            <p>Steam-powered locomotives were invented in the early 1800s. At first they pulled wagons full of coal, and later carriages 
+                full of people. A steam locomotive generally burnt coal in a furnace, or "firebox", and the fire heated water in a boiler 
+                to make steam. The steam was fed into cylinders to drive moveable rods called pistons, and the motion of the pistons was 
+                used to turn the wheels. One of the most successful early steam locomotives was <em>Rocket</em>, built by English engineer
+                Robert Stephenson. In 1829, Rocket won a contest called the Rainhill Trials to find the best locomotive. The winner got the
+                contract to pull trains on the world's first inter-city line, between Liverpool and Manchester in the UK.</p><br>
+        
+            <p>In US most locomotives had wood-burning engines. Wood did not produce such a fierce heat as coal, but in North America it 
+                was plentiful and cheaper than coal. A shower of sparks often came out of the chimney along wth the smoke and steam, and 
+                the sparks could set fire to forests and dry grassland, and even trackside buildings. Devices called "spark arrestors" 
+                were fitted to the chimneys to try to stop this from happening. American locomotives usually had a small, pivoting truck 
+                called a bogey at the front to help the engine go round sharp curves. A cowcatcher at the front was needed to push 
+                obstacles off the track, on the open grasslands of North America.</p>
+        </div>
+    </div>
+
+    <div class="part3">
+        <h3>Electric trains</h3>
+        <div class="container3">
+            <img src="electric.jpg" width="300" alt="electric train">
+            <p>Engineers developed the first electric locomotives in the late 19th century. By the 1930s, they had become very popular. 
+                From the 1940s to the 1960s, electric and diesel trains replaced steam power in many countries. An electric locomotive 
+                uses electric motors to drive the wheels. Some locomotives collect electricity from overhead cables, while others take 
+                power from a third "live" rail on the track. It is very expensive to build the lines or rails that carry the electric 
+                current. But electric locomotives are cleaner, quieter, faster, and more reliable than steam or diesel engines. Today, 
+                most high-speed trains are powered by electricity, and also busy city lines like underground railways and commuter 
+                services.</p>
+        </div>
+    </div>
+
+    <div class="part4">
+        <h3>High-speed Trains</h3>
+        <div class="container4">
+            <img src="ice.jpg" width="300" alt="high-speed train">
+            <p>High speed train is a type of rail transport that runs significantly faster than traditional rail traffic, using an 
+                integrated system of specialized rolling stock and dedicated tracks. While there is no single standard that applies 
+                worldwide, new lines in excess of 250 kilometres per hour and existing lines in excess of 200 kilometres per hour are 
+                widely considered to be high-speed.The first high-speed trains appeared in Japan in 1964. Today, there are high-speed 
+                trains in many countries, including the TGV in France.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <footer>
+            <p>Copyright &copy</p>
+        </footer>
+    </div>
+    
+    <!--JavaScript Code-->
+    
+    <script type="text/javascript">
+        let train = document.getElementById("train");
+        let text = document.getElementById("text");
+
+        window.addEventListener("scroll", function(){
+            var value = window.scrollY;
+
+            train.style.top = value * 0.5 + "px";
+            text.style.top = value * -0.5 + "px";
+
+        })
+    </script>
+</body>
+</html>
